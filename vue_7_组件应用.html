@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+  <title>组件应用</title>
+ </head>
+ <body>
+ <ol>
+	<todo-item>sss</todo-item>
+	<todo-item>fff</todo-item>
+	<todo-item>ggg</todo-item>
+ </ol>
+  <script type="text/javascript">
+	//定义名为 todo-item的新组件
+	Vue.component('todo-item',{
+		template:'<li>这是个待办项</li>'
+	})
+  </script>
+ </body>
+</html>

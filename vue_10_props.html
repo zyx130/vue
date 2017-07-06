@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+  <title>prop数据传递</title>
+ </head>
+ <body>
+	<div id="app">
+		<child message = "hello!"></child>	
+	</div>
+	<script type="text/javascript">
+		Vue.component('child',{
+			props:['message'],
+			template:'<span>{{message}}</span>'
+		});
+		var vm = new Vue({
+			el:'#app'
+		})
+	</script>
+ </body>
+</html>

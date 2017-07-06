@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+  <title>组件应用3</title>
+ </head>
+ <body>
+	<div id="example-2">
+		<simple-counter></simple-counter>
+		<simple-counter></simple-counter>
+		<simple-counter></simple-counter>
+	</div>
+	<script type="text/javascript">
+		var data={counter:0}
+		//创建一个新的组件
+			template:'<button v-on:click="counter+=1">{{counter}}</button>',
+			data:function(){
+				return {
+					counter:0
+				}
+				//return data;
+			}
+		});
+		var app = new Vue({
+			el:"#example-2"
+		});
+	</script>
+ </body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Document</title>
+   <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+ </head>
+ <body>
+	<div id='app' v-bind:style="{backgroundColor:activeColor,border:activeBorder,width:activewidth+'px',height:activeHeight+'px'}"></div>
+	<script type="text/javascript">
+		var app = new Vue({
+			el:"#app",
+			data:{
+				activeColor:'pink',
+				activewidth:30,
+				activeHeight:30,
+				activeBorder:'1px solid #ddd'
+			}
+		});
+	</script>
+ </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js">
+  </script>
+  <title>Document</title>
+ </head>
+ <body>
+	<div id="app" v-bind:style="classObject">HHH</div>
+	<script type="text/javascript">
+		var app = new Vue({
+			el:"#app",
+			data:{
+				classObject:{
+					color:"green",
+					width:"400px",
+					height:"400px",
+					borderRadius:"50%",
+					backgroundColor:"pink",
+					transform:"scale(30deg)"
+				}
+			}
+		});
+	</script>
+ </body>
+</html>
